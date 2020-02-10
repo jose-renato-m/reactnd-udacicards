@@ -8,6 +8,16 @@ const DECKS_STORAGE_KEY = 'MobileFlashcards: Decks'
  */
 export async function fetchAllDecks() {
 
+    // Get all the decks from AsyncStorage. If there aren't any then use the dummy data
+    // as the default set of decks.
+    let decksJson = await AsyncStorage.getItem(DECKS_STORAGE_KEY)
+
+    if (decksJson != null) {
+        return JSON.parse(decksJson)
+    } else {
+        AsyncStorage.setItem(DECKS_STORAGE_KEY, JSON.stringify(dummyData))
+        return dummyData
+    }
 }
 
 

@@ -1,7 +1,9 @@
 import React from 'react'
 
-function CustomStatusBar() {
-
+function CustomStatusBar({...props}) {
+    return (
+        
+    )
 }
 
 export default CustomStatusBar

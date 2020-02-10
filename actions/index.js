@@ -18,7 +18,7 @@ export function addDeck(deck) {
 
 export function addCard(questionDetails) {
     return {
-        type ADD_CARD,
+        type: ADD_CARD,
         questionDetails,
     }
 }

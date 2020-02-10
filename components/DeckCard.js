@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { View, Text, StyleSheet, TouchableOpacity, Animated } from 'react-native'
+import { FontAwesome } from '@expo/vector-icons'
+import { bgGreen, white } from '../utils/colors'
+import { robotoMedium, robotoRegular } from '../utils/fonts'
 
 class DeckCard extends Component {
 

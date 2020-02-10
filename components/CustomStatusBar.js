@@ -4,7 +4,9 @@ import Constants from 'expo-constants'
 
 function CustomStatusBar({...props}) {
     return (
-
+        <View style={{height: Constants.statusBarHeight}}>
+            
+        </View>
     )
 }
 

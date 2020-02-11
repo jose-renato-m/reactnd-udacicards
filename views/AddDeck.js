@@ -54,6 +54,14 @@ class AddDeck extends Component {
     onTitleChange = (value) => {
         this.setState({ title: value })
     }
+
+    render() {
+        return (
+            <View style={{flex: 1}}>
+                
+            </View>
+        )
+    }
 }
 
 export default connect()(AddDeck)

@@ -32,7 +32,13 @@ class Question extends Component {
             <View>
 
                 <Text style={globalStyles.title}>Question</Text>
-                <Text style={StyleSheet.largeText}>{ questionObject.question }</Text>  
+                <Text style={StyleSheet.largeText}>{ questionObject.question }</Text>
+
+                {!this.state.showAnswerArea && (
+                    <View>
+                        
+                    </View>
+                )}
             </View>
         )
     }

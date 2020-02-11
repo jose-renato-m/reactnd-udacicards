@@ -15,7 +15,8 @@ class Decks extends Component {
 
         return (
             <View style={{flex: 1}}>
-                
+
+                <CustomStatusBar />
             </View>
         )
     }

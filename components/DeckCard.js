@@ -11,6 +11,20 @@ class DeckCard extends Component {
     state = {
         scaleValue: new Animated.Value(1)
     }
+
+    handleDeckPress = () => {
+        const { deck } = this.props
+        const { scaleValue } = this.state
+
+        Animated.sequence([
+            Animated.timing(scaleValue, { duration: 125, toValue: 0.96 }),
+            Animated.timing(scaleValue, { duration: 125, toValue: 1 }),
+        ]).start(() => {
+            NavigationService.navigate('Deck', {
+               deckId: deck.id 
+            })
+        })
+    }
 }
 
 class DeckCard extends Component {

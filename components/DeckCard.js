@@ -35,6 +35,9 @@ class DeckCard extends Component {
 
         return (
             
+            <Animated.View style={{ transform: [{ scale: scaleValue }]}}>
+                
+            </Animated.View>
         )
     }
 }

@@ -11,6 +11,8 @@ class Decks extends Component {
 
     render() {
 
+        const { decksArray } = this.props
+
         return (
 
         )

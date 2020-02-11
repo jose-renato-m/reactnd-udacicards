@@ -32,7 +32,7 @@ class Question extends Component {
             <View>
 
                 <Text style={globalStyles.title}>Question</Text>
-                <Text style={StyleSheet.largeText}>{ questionObject.question }</Text>
+                <Text style={styles.largeText}>{ questionObject.question }</Text>
 
                 {!this.state.showAnswerArea && (
                     <View>
@@ -41,6 +41,18 @@ class Question extends Component {
                             style={globalStyles.btnSecondary}>
                                 <Text style={globalStyles.btnSecondaryText}>Show Answer</Text>
                         </TouchableOpacity>
+                    </View>
+                )}
+
+                {this.state.showAnswerArea && (
+                    <View>
+                        <Text style={styles.heading}>Answer</Text>
+                        <Text style={styles.largeText}>{ questionObject.answer }</Text>
+
+                        <Text style={styles.heading}>How did you do?</Text>
+                        <Text style={styles.smallText}>You got the answer...</Text>
+
+                        
                     </View>
                 )}
             </View>

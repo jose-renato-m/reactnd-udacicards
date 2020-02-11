@@ -19,8 +19,14 @@ export default function QuizHeader(props) {
             <View style={styles.imageContainer}>
                 <Image source={require('../images/cards-quiz.png')} />
             </View>
+
         </View>
     )
+}
+
+QuizHeader.propTypes = {
+    currentQuestionIndex: PropTypes.number.isRequired,
+    totalQuestions: PropTypes.number.isRequired,
 }
 
 const styles = StyleSheet.create({

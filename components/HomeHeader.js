@@ -10,6 +10,11 @@ export default function HomeHeader() {
 
             <Image source={require('../images/cards-happy.png')} />
 
+            <View style={styles.headerTextContainer}>
+                <Text style={styles.headerText}>Mobile</Text>
+                <Text style={styles.headerText}>Flashcards</Text>
+                <Text style={styles.headerTagline}>The fun way to prepare for tests</Text>
+            </View>
             
         </View>
     )

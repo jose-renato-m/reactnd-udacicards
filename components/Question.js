@@ -8,6 +8,9 @@ import { textColor, white } from '../utils/colors'
 
 class Question extends Component {
 
+    state = {
+        showAnswerArea: false
+    }
 }
 
 export default Question

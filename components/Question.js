@@ -31,7 +31,8 @@ class Question extends Component {
         return (
             <View>
 
-                <Text style={globalStyles.title}>Question</Text>                
+                <Text style={globalStyles.title}>Question</Text>
+                <Text style={StyleSheet.largeText}>{ questionObject.question }</Text>  
             </View>
         )
     }

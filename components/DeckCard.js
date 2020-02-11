@@ -63,10 +63,16 @@ class DeckCard extends Component {
                                 size={18}
                              />
                         )}
+
                     </TouchableOpacity>
             </Animated.View>
         )
     }
+}
+
+DeckCard.propTypes = {
+    deck: PropTypes.object.isRequired,
+    allowNavigation: PropTypes.bool,
 }
 
 const styles = StyleSheet.create({

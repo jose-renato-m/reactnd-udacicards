@@ -8,6 +8,13 @@ import CustomStatusBar from '../components/CustomStatusBar'
 import { addDeck } from '../actions/index'
 
 class AddDeck extends Component {
+
+    state = {
+        title: '',
+        showRequiredInputError: false,
+        showUniqueNameError: false,
+    }
+
     
 }
 

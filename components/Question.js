@@ -36,7 +36,11 @@ class Question extends Component {
 
                 {!this.state.showAnswerArea && (
                     <View>
-                        
+                        <TouchableOpacity
+                            onPress={this.handleShowAnswerPress}
+                            style={globalStyles.btnSecondary}>
+                                <Text style={globalStyles.btnSecondaryText}>Show Answer</Text>
+                        </TouchableOpacity>
                     </View>
                 )}
             </View>

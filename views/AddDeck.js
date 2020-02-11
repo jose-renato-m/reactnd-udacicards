@@ -76,7 +76,13 @@ class AddDeck extends Component {
                     {this.state.showUniqueNameError && (
                         <Text style={globalStyles.inputErrorText}>This title has already been used</Text>
                     )}
+
+                    <TouchableOpacity onPress={this.onSubmit} style={globalStyles.btnPrimary}>
+                        <Text style={globalStyles.btnPrimaryText}>Create Deck</Text>
+                    </TouchableOpacity>
+
                 </View>
+                
             </View>
         )
     }

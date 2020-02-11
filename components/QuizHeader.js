@@ -15,6 +15,10 @@ export default function QuizHeader(props) {
                     { props.currentQuestionIndex + 1 } / { props.totalQuestions }
                 </Text>
             </View>
+
+            <View style={styles.imageContainer}>
+                
+            </View>
         </View>
     )
 }

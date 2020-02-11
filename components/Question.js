@@ -55,7 +55,11 @@ class Question extends Component {
                         <View style={styles.buttons.Container}>
 
                             <View style={{ flex: 1 }}>
-                                
+                                <TouchableOpacity
+                                    onPress={() => this.handleQuestionAnswered(true)}
+                                    style={styles.btnSuccess}>
+                                        <Text style={styles.btnSuccessText}>Correct</Text>
+                                </TouchableOpacity>
                             </View>
                         </View>
                     </View>

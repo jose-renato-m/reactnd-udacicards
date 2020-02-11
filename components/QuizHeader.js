@@ -17,7 +17,7 @@ export default function QuizHeader(props) {
             </View>
 
             <View style={styles.imageContainer}>
-                
+                <Image source={require('../images/cards-quiz.png')} />
             </View>
         </View>
     )

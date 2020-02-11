@@ -70,3 +70,16 @@ class AddDeck extends Component {
 }
 
 export default connect()(AddDeck)
+
+const styles = StyleSheet.create({
+    tagline: {
+        color: textColor,
+        fontSize: 16,
+    },
+    label: {
+        marginTop: 32,
+        marginBottom: 4,
+        fontSize: 16,
+        fontFamily: robotoMedium,
+    },
+})

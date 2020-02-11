@@ -24,7 +24,14 @@ class Question extends Component {
         onQuestionAnswered(answeredCorrectly)
     }
 
-    
+    render() {
+
+        const { questionObject } = this.props
+
+        return (
+            
+        )
+    }
 }
 
 export default Question

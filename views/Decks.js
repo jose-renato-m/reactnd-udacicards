@@ -17,6 +17,10 @@ class Decks extends Component {
             <View style={{flex: 1}}>
 
                 <CustomStatusBar />
+
+                <ScrollView style={globalStyles.viewContainer}>
+                    
+                </ScrollView>
             </View>
         )
     }

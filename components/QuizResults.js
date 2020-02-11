@@ -10,9 +10,20 @@ function QuizResults (props) {
 
     const { totalQuestions, questionsAnsweredCorrectly, onStartQuizAgain } = props
     const percentage = Math.round((100 / totalQuestions) * questionsAnsweredCorrectly)
+
     return (
 
     )
 }
+
+const styles = StyleSheet.create({
+    largeText: {
+        marginTop: 8,
+        marginBottom: 20,
+        fontSize: 20,
+        fontFamily: robotoMedium,
+        color: textColor,
+    },
+})
 
 export default QuizResults

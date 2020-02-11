@@ -17,6 +17,12 @@ function QuizResults (props) {
             <Text style={styles.largeText}>
                 You got { questionsAnsweredCorrectly } out of { totalQuestions } correct ({ percentage }%)
             </Text>
+
+            <TouchableOpacity
+                onPress={onStartQuizAgain}
+                style={globalStyles.btnSecondary}>
+                    <Text style={globalStyles.btnSecondaryText}>Start Quiz Again</Text>
+            </TouchableOpacity>
         </View>
     )
 }

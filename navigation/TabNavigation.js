@@ -49,6 +49,6 @@ const TabNavigator = createBottomTabNavigator(
         },
     })
 
-
+    const TabNavigation = createAppContainer(TabNavigator)
 
 export default TabNavigation

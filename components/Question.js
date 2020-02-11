@@ -72,9 +72,16 @@ class Question extends Component {
                         </View>
                     </View>
                 )}
+
             </View>
         )
+
     }
+}
+
+Question.propTypes = {
+    questionObject: PropTypes.object.isRequired,
+    onQuestionAnswered: PropTypes.func.isRequired,
 }
 
 const styles = StyleSheet.create({

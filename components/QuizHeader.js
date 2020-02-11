@@ -7,7 +7,15 @@ import { robotoMedium } from '../utils/fonts'
 export default function QuizHeader(props) {
 
     return (
-        
+        <View style={styles.headerPanel}>
+
+            <View style={styles.headerTextContainer}>
+                <Text style={styles.headerText}>quiz Time!</Text>
+                <Text style={styles.countText}>
+                    { props.currentQuestionIndex + 1 } / { props.totalQuestions }
+                </Text>
+            </View>
+        </View>
     )
 }
 
@@ -40,5 +48,5 @@ const styles = StyleSheet.create({
     imageContainer: {
         flex: 1,
         alignItems: 'flex-end'
-    }
+    },
 })

@@ -55,6 +55,14 @@ class DeckCard extends Component {
                                 }
                             </View>
                         </View>
+
+                        {allowNavigation && (
+                            <FontAwesome
+                                name='chevron-right'
+                                style={styles.rightArrow}
+                                size={18}
+                             />
+                        )}
                     </TouchableOpacity>
             </Animated.View>
         )

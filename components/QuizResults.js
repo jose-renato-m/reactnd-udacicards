@@ -12,7 +12,12 @@ function QuizResults (props) {
     const percentage = Math.round((100 / totalQuestions) * questionsAnsweredCorrectly)
 
     return (
-
+        <View>
+            <Text style={globalStyles.title}>Quiz Complete</Text>
+            <Text style={styles.largeText}>
+                You got { questionsAnsweredCorrectly } out of { totalQuestions } correct ({ percentage }%)
+            </Text>
+        </View>
     )
 }
 

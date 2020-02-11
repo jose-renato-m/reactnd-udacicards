@@ -113,10 +113,10 @@ function mapDispatchToProps(dispatch, { navigation }) {
         },
         goToDecks: () => navigation.navigate('Decks')
     }
-    
+
 }
 
-export default connect()(AddDeck)
+export default connect(mapStateToProps, mapDispatchToProps)(AddDeck)
 
 const styles = StyleSheet.create({
     tagline: {

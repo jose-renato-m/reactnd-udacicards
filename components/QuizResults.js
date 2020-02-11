@@ -23,6 +23,12 @@ function QuizResults (props) {
                 style={globalStyles.btnSecondary}>
                     <Text style={globalStyles.btnSecondaryText}>Start Quiz Again</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={NavigationService.goBack}
+                style={globalStyles.btnSecondary}>
+                    <Text style={globalStyles.btnSecondaryText}>Return To Deck</Text>
+            </TouchableOpacity>
         </View>
     )
 }

@@ -11,6 +11,20 @@ class Question extends Component {
     state = {
         showAnswerArea: false
     }
+
+    handleShowAnswerPress = () => {
+        this.setState({ showAnswerArea: true })
+    }
+
+    handleQuestionAnswered = (answeredCorrectly) => {
+        const { onQuestionAnswered } = this.props
+
+        this.setState({ showAnswerArea: false })
+
+        onQuestionAnswered(answeredCorrectly)
+    }
+
+    
 }
 
 export default Question

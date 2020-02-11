@@ -61,6 +61,10 @@ class Question extends Component {
                                         <Text style={styles.btnSuccessText}>Correct</Text>
                                 </TouchableOpacity>
                             </View>
+
+                            <View style={{ flex: 1 }}>
+                                
+                            </View>
                         </View>
                     </View>
                 )}

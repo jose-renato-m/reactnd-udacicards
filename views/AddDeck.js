@@ -22,6 +22,34 @@ class AddDeck extends Component {
             showUniqueNameError: false,
         })
     }
+
+    onSubmit = () => {
+
+        const { decks, addDeck, goToDecks } = this.props
+        const { title } = this.state
+
+        const titleNoWhitespace = title.replace(/\s/g, '')
+
+        if (!titleNoWhitespace.length) {
+            this.setState({ showRequiredInputError: true, showUniqueNameError: false })
+            return
+        }
+
+        const titleAlreadyUsed = Object.keys(decks).some((key) => {
+            const deck = decks[key]
+            return deck.title === title
+        })
+
+        if (titleAlreadyUsed) {
+            this.setState({ showRequiredInputError: false, showUniqueNameError: true })
+            return
+        }
+
+        addDeck(title)
+        goToDecks()
+
+        this.resetState()
+    }
 }
 
 export default connect()(AddDeck)

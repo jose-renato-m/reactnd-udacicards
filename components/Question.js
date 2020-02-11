@@ -63,7 +63,11 @@ class Question extends Component {
                             </View>
 
                             <View style={{ flex: 1 }}>
-                                
+                                <TouchableOpacity
+                                    onPress={() => this.handleQuestionAnswered(false)}
+                                    style={styles.btnError}>
+                                        <Text style={styles.btnErrorText}>Incorrect</Text>
+                                </TouchableOpacity>
                             </View>
                         </View>
                     </View>

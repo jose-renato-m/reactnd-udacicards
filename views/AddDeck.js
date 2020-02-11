@@ -82,9 +82,15 @@ class AddDeck extends Component {
                     </TouchableOpacity>
 
                 </View>
-                
+
             </View>
         )
+    }
+}
+
+function mapStateToProps(decks) {
+    return {
+        decks
     }
 }
 

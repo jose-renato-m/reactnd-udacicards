@@ -7,6 +7,9 @@ export default function HomeHeader() {
 
     return (
         <View style={styles.headerPanel}>
+
+            <Image source={require('../images/cards-happy.png')} />
+
             
         </View>
     )

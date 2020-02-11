@@ -50,6 +50,10 @@ class AddDeck extends Component {
 
         this.resetState()
     }
+
+    onTitleChange = (value) => {
+        this.setState({ title: value })
+    }
 }
 
 export default connect()(AddDeck)

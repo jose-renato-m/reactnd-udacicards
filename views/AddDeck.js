@@ -68,8 +68,14 @@ class AddDeck extends Component {
                     <Text style={styles.label}>Title</Text>
                     <TextInput value={this.state.title} onChangeText={this.onTitleChange} style={globalStyles.textInput} />
 
-                    
-                           
+
+                    {this.state.showRequiredInputError && (
+                        <Text style={globalStyles.inputErrorText}>Please enter a title</Text>
+                    )}
+
+                    {this.state.showUniqueNameError && (
+                        <Text style={globalStyles.inputErrorText}>This title has already been used</Text>
+                    )}
                 </View>
             </View>
         )

@@ -28,10 +28,22 @@ class Decks extends Component {
                     {decksArray.map((deck) => (
                         <DeckCard deck={deck} allowNavigation={true} key={deck.id} />
                     ))}
+
                 </ScrollView>
             </View>
         )
     }
 }
 
-export default connect()(Decks)
+function mapStateToProps(decks) {
+
+    const decksArray = Object.keys(decks)
+        .map((key) => decks[key])
+        .sort((a, b) => b.timestamp - a.timestamp)
+    
+        return {
+            decksArray
+        }
+}
+
+export default connect(mapStateToProps)(Decks)

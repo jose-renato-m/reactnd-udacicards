@@ -43,6 +43,9 @@ class DeckCard extends Component {
                     style={styles.container}>
 
                         <View style={styles.contentContainer}>
+                            <Text style={styles.title}>{deck.title}</Text>
+                            <Text style={styles.createdText}>Created: {deck.created}</Text>
+
                             
                         </View>
                     </TouchableOpacity>

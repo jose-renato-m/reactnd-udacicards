@@ -14,7 +14,9 @@ class Decks extends Component {
         const { decksArray } = this.props
 
         return (
-
+            <View style={{flex: 1}}>
+                
+            </View>
         )
     }
 }

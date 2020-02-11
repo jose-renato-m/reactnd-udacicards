@@ -34,14 +34,54 @@ class DeckCard extends Component {
         const cardCount = deck.questions.length
 
         return (
-
             
         )
     }
 }
 
-class DeckCard extends Component {
-
-}
+const styles = StyleSheet.create({
+   container: {
+       flexDirection: 'row',
+       alignItems: 'center',
+       marginTop: 8,
+       marginBottom: 8,
+       padding: 16,
+       borderRadius: 10,
+       backgroundColor: bgGreen,
+   },
+   contentContainer: {
+      flex: 1, 
+   },
+   title: {
+      fontSize: 22,
+      fontFamily: robotoMedium,
+      color: white, 
+   },
+  createdText: {
+     fontSize: 14,
+     fontFamily:  robotoRegular,
+     color: white,
+  },
+  countContainer: {
+      flexDirection: 'row',
+      alignItems: 'flex-end',
+      marginTop: 16,
+  },
+  countText: {
+      fontSize: 28,
+      fontFamily: robotoMedium,
+      color: white,
+  },
+  countLabel: {
+      marginLeft: 5,
+      marginBottom: 2,
+      fontSize: 22,
+      fontFamily: robotoMedium,
+      color: '#ffffffcc'
+  },
+  rightArrow: {
+      color: white,
+  }
+})
 
 export default DeckCard

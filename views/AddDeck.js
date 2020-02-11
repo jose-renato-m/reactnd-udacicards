@@ -15,7 +15,13 @@ class AddDeck extends Component {
         showUniqueNameError: false,
     }
 
-    
+    resetState = () => {
+        this.setState({
+            title: '',
+            showRequiredInputError: false,
+            showUniqueNameError: false,
+        })
+    }
 }
 
 export default connect()(AddDeck)

@@ -8,6 +8,8 @@ import NavigationService from '../navigation/navigationService'
 
 function QuizResults (props) {
 
+    const { totalQuestions, questionsAnsweredCorrectly, onStartQuizAgain } = props
+    const percentage = Math.round((100 / totalQuestions) * questionsAnsweredCorrectly)
     return (
 
     )

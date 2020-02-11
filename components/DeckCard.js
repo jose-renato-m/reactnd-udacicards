@@ -5,7 +5,6 @@ import { FontAwesome } from '@expo/vector-icons'
 import { bgGreen, white } from '../utils/colors'
 import { robotoMedium, robotoRegular } from '../utils/fonts'
 import NavigationService from '../navigation/navigationService'
-import thunk from 'redux-thunk'
 
 class DeckCard extends Component {
 

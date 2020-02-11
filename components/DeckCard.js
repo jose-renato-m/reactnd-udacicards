@@ -47,7 +47,12 @@ class DeckCard extends Component {
                             <Text style={styles.createdText}>Created: {deck.created}</Text>
 
                             <View style={styles.countContainer}>
-                                
+                                <Text style={styles.countText}>{cardCount}</Text>
+
+                                {cardCount === 1
+                                    ? <Text style={styles.countLabel}>flashcard</Text>
+                                    : <Text style={styles.countLabel}>flashcards</Text>
+                                }
                             </View>
                         </View>
                     </TouchableOpacity>

@@ -7,7 +7,10 @@ import { robotoMedium, robotoRegular } from '../utils/fonts'
 import NavigationService from '../navigation/navigationService'
 
 class DeckCard extends Component {
-    
+
+    state = {
+        scaleValue: new Animated.Value(1)
+    }
 }
 
 class DeckCard extends Component {

@@ -19,7 +19,7 @@ class Decks extends Component {
                 <CustomStatusBar />
 
                 <ScrollView style={globalStyles.viewContainer}>
-                    
+                    <HomeHeader />
                 </ScrollView>
             </View>
         )

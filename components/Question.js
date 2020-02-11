@@ -30,7 +30,8 @@ class Question extends Component {
 
         return (
             <View>
-                
+
+                <Text style={globalStyles.title}>Question</Text>                
             </View>
         )
     }

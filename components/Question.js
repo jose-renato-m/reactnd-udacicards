@@ -29,7 +29,9 @@ class Question extends Component {
         const { questionObject } = this.props
 
         return (
-            
+            <View>
+                
+            </View>
         )
     }
 }

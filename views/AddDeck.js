@@ -61,7 +61,9 @@ class AddDeck extends Component {
 
                 <CustomStatusBar />
 
-                
+                <View style={globalStyles.viewContainer}>
+                    <Text style={globalStyles.title}>Add Deck</Text>                    
+                </View>
             </View>
         )
     }

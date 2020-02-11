@@ -33,6 +33,12 @@ function QuizResults (props) {
     )
 }
 
+QuizResults.propTypes = {
+    totalQuestions: PropTypes.number.isRequired,
+    questionsAnsweredCorrectly: PropTypes.number.isRequired,
+    onStartQuizAgain: PropTypes.func.isRequired,
+}
+
 const styles = StyleSheet.create({
     largeText: {
         marginTop: 8,

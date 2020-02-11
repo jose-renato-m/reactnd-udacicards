@@ -5,6 +5,11 @@ import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 import { bgBlue, white } from '../utils/colors'
 import { robotoRegular } from '../utils/fonts'
 
+import Decks from '../views/Decks'
+import AddDeck from '../views/AddDeck'
+
+
+
 
 
 export default TabNavigation

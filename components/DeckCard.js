@@ -36,7 +36,13 @@ class DeckCard extends Component {
         return (
             
             <Animated.View style={{ transform: [{ scale: scaleValue }]}}>
-                
+
+                <TouchableOpacity
+                    disabled={!allowNavigation}
+                    onPress={this.handleDeckPress}
+                    style={StyleSheet.container}>
+                        
+                    </TouchableOpacity>
             </Animated.View>
         )
     }

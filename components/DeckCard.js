@@ -40,8 +40,11 @@ class DeckCard extends Component {
                 <TouchableOpacity
                     disabled={!allowNavigation}
                     onPress={this.handleDeckPress}
-                    style={StyleSheet.container}>
-                        
+                    style={styles.container}>
+
+                        <View style={styles.contentContainer}>
+                            
+                        </View>
                     </TouchableOpacity>
             </Animated.View>
         )

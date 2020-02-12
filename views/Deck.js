@@ -43,7 +43,9 @@ class Deck extends Component {
         const { showNoQuestionsError } = this.state
 
         return (
-            
+            <View style={[globalStyles.viewContainer, { marginTop: 8}]}>
+                
+            </View>
         )
     }
 }

@@ -32,5 +32,6 @@ const StackNavigator = createStackNavigator({
     },
 })
 
+const StackNavigation = createAppContainer(StackNavigator)
 
 export default StackNavigation

@@ -52,7 +52,10 @@ class Quiz extends Component {
         const currentQuestionObject = questions[currentQuestionIndex]
 
         return (
+            <View style={{flex: 1}}>
 
+                
+            </View>
         )
     }
 }

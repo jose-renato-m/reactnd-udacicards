@@ -8,6 +8,12 @@ import { robotoMedium } from '../utils/fonts'
 
 class AddCard extends Component {
 
+    state = {
+        question: '',
+        answer: '',
+        showQuestionRequiredError: false,
+        showAnswerRequiredError: false,
+    }
 }
 
 export default connect()(AddCard)

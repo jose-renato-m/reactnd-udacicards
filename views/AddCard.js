@@ -88,9 +88,13 @@ class AddCard extends Component {
                     {this.state.showAnswerRequiredError && (
                         <Text style={globalStyles.inputErrorText}>Please enter the answer</Text>
                     )}
-                    
-                     
+
+                    <TouchableOpacity onPress={this.onSubmit} style={globalStyles.btnPrimary}>
+                        <Text style={globalStyles.btnPrimaryText}>Add card</Text>  
+                    </TouchableOpacity> 
+
                 </View>
+                
             </View>
         )
     }

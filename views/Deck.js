@@ -65,9 +65,19 @@ class Deck extends Component {
                     <Text style={globalStyles.inputErrorText}>Add one or more cards before taking the quiz</Text>
                 )}
 
-                
+
             </View>
         )
+    }
+}
+
+function mapStateToProps(decks, { navigation }) {
+    const { deckId } = navigation.state.params
+
+    return {
+        deckId,
+        deck: decks[deckId],
+        questionsCount: decks[deckId].questions.length
     }
 }
 

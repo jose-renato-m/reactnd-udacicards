@@ -49,7 +49,15 @@ export default class App extends Component {
 
     return (
       <Provider store={this.store}>
-        
+        <View style={styles.appContainer}>
+
+          {this.state.prerequisitesLoaded && (
+            <StackNavigation ref={(navigatorRef) => {
+              NavigationService.setTopLevelNavigator(navigatorRef)
+            }} />
+          )}
+          
+        </View>
       </Provider>
     )
   }
@@ -58,6 +66,6 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
   }
 })

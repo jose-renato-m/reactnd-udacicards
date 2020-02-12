@@ -44,6 +44,9 @@ class Deck extends Component {
 
         return (
             <View style={[globalStyles.viewContainer, { marginTop: 8}]}>
+
+                <DeckCard deck={deck} allowNavigation={false} />
+
                 
             </View>
         )

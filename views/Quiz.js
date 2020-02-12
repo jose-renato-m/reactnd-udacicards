@@ -47,8 +47,12 @@ class Quiz extends Component {
 
     render() {
 
+        const { questions } = this.props
+        const { currentQuestionIndex, answeredCorrectly, quizComplete } = this.state
+        const currentQuestionObject = questions[currentQuestionIndex]
+
         return (
-            
+
         )
     }
 }

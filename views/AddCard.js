@@ -14,6 +14,17 @@ class AddCard extends Component {
         showQuestionRequiredError: false,
         showAnswerRequiredError: false,
     }
+
+    resetState = () => {
+        this.setState({
+            question: '',
+            answer: '',
+            showQuestionRequiredError: false,
+            showAnswerRequiredError: false,
+        })
+    }
+
+    
 }
 
 export default connect()(AddCard)

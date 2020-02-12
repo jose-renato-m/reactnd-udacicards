@@ -56,7 +56,10 @@ class Quiz extends Component {
 
                 <CustomStatusBar />
 
-                
+                <View style={globalStyles.viewContainer}>
+
+                    
+                </View>
             </View>
         )
     }

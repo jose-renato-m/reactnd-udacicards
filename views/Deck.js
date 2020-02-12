@@ -47,6 +47,24 @@ class Deck extends Component {
 
                 <DeckCard deck={deck} allowNavigation={false} />
 
+                <Text style={globalStyles.title}>Deck</Text>
+
+                <TouchableOpacity
+                    onPress={this.handleAddCard}
+                    style={globalStyles.btnSecondary}>
+                        <Text style={globalStyles.btnSecondaryText}Add Card></Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    onPress={this.handleStartQuiz}
+                    style={globalStyles.btnPrimary}>
+                        <Text style={globalStyles.btnPrimaryText}>Start Quiz</Text>
+                </TouchableOpacity>
+
+                {showNoQuestionsError && (
+                    <Text style={globalStyles.inputErrorText}>Add one or more cards before taking the quiz</Text>
+                )}
+
                 
             </View>
         )

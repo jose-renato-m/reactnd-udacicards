@@ -8,6 +8,9 @@ import DeckCard from '../components/DeckCard'
 
 class Deck extends Component {
 
+    state = {
+        showNoQuestionsError: false
+    }
 }
 
 export default connect()(Deck)

@@ -58,7 +58,21 @@ class Quiz extends Component {
 
                 <View style={globalStyles.viewContainer}>
 
+                    <QuizHeader
+                        currentQuestionIndex={currentQuestionIndex}
+                        totalQuestions={questions.length} />
                     
+                    {quizComplete
+                        ? <QuizResults
+                            questionsAnsweredCorrectly={answeredCorrectly}
+                            totalQuestions={questions.length}
+                            onStartQuizAgain={this.handleStartQuizAgain}
+
+                           />
+                        : <Question
+                            questionObject={currentQuestionObject}
+                            onQuestionAnswered={this.handleQuestionAnswered}
+                           />}
                 </View>
             </View>
         )

@@ -54,3 +54,10 @@ export default class App extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  appContainer: {
+    flex: 1,
+    backgroundColor: '#fff'
+  }
+})

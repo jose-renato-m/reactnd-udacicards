@@ -11,6 +11,11 @@ import QuizResults from '../components/QuizResults'
 
 class Quiz extends Component {
 
+    state = {
+        currentQuestionIndex: 0,
+        answeredCorrectly: 0,
+        quizComplete: false,
+    }
 }
 
 export default connect()(Quiz)

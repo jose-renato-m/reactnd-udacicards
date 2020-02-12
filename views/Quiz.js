@@ -73,10 +73,21 @@ class Quiz extends Component {
                             questionObject={currentQuestionObject}
                             onQuestionAnswered={this.handleQuestionAnswered}
                            />}
+
                 </View>
+
             </View>
         )
     }
 }
 
-export default connect()(Quiz)
+function mapStateToProps(decks, { navigation }) {
+    const { deckId } = navigation.state.params
+
+    return {
+        deckId,
+        questions: decks[deckId].questions
+    }
+}
+
+export default connect(mapStateToProps)(Quiz)

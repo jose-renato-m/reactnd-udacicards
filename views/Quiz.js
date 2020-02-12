@@ -16,6 +16,26 @@ class Quiz extends Component {
         answeredCorrectly: 0,
         quizComplete: false,
     }
+
+    handleQuestionAnswered = async (answeredCorrectly) => {
+
+        if (answeredCorrectly) {
+            this.setState({answeredCorrectly: this.state.answeredCorrectly + 1})
+        }
+
+        const isQuizComplete = this.state.currentQuestionIndex === this.props.questions.length - 1
+
+        if (isQuizComplete) {
+
+            this.setState({quizComplete: true})
+
+            await clearLocalNotification()
+            await setLocalNotification()
+
+        } else {
+            this.setState({currentQuestionIndex: this.state.currentQuestionIndex + 1})
+        }
+    }
 }
 
 export default connect()(Quiz)

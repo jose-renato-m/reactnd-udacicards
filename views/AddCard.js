@@ -67,7 +67,13 @@ class AddCard extends Component {
 
     render() {
         return (
-            
+            <View style={{flex:1}}>
+
+                <View style={globalStyles.viewContainer}>
+
+                    <Text style={globalStyles.title}>Add Card</Text>                    
+                </View>
+            </View>
         )
     }
 }

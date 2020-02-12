@@ -115,10 +115,10 @@ function mapDispatchToProps(dispatch, { navigation }) {
         },
         goBack: () => navigation.goBack()
     }
-    
+
 }
 
-export default connect()(AddCard)
+export default connect(null, mapDispatchToProps)(AddCard)
 
 const styles = StyleSheet.create({
     tagline: {

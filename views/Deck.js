@@ -34,7 +34,17 @@ class Deck extends Component {
         NavigationService.navigate('AddCard', {
             deckId: deck.id
         })
-        
+
+    }
+
+    render() {
+
+        const { deck } = this.props
+        const { showNoQuestionsError } = this.state
+
+        return (
+            
+        )
     }
 }
 

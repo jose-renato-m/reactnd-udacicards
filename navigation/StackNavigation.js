@@ -8,7 +8,29 @@ import AddDeck from '../views/AddDeck'
 import AddCard from '../views/AddCard'
 import Quiz from '../views/Quiz'
 
-
+const StackNavigator = createStackNavigator({
+    Primary: {
+        screen: TabNavigation,
+        navigationOptions: {
+            header: null,
+        },
+    },
+    Decks: {
+        screen: Decks,
+    },
+    Deck: {
+        screen: Deck,
+    },
+    AddDeck: {
+        screen: AddDeck,
+    },
+    AddCard: {
+        screen: AddCard,
+    },
+    Quiz: {
+        screen: Quiz,
+    },
+})
 
 
 export default StackNavigation

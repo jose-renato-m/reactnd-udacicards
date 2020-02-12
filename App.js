@@ -21,5 +21,25 @@ export default class App extends Component {
     prerequisitesLoaded: false
   }
 
-  
+  async componentDidMount() {
+
+    await setLocalNotification()
+
+    const loadDecksPromise = fetchAllDecks()
+
+    const loadFontsPromise = Font.loadAsync({
+      [robotoRegular]: require('./assets/fonts/Roboto-Regular.ttf'),
+      [robotoMedium]: require('./assets/fonts/Roboto-Medium.ttf')
+    })
+
+    Promise.all([loadDecksPromise, loadFontsPromise])
+      .then((values) => {
+        const decks = values[0]
+        this.store.dispatch(receiveDecks(decks))
+
+        this.setState({
+          prerequisitesLoaded: true
+        })
+      })
+  }
 }

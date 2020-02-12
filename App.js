@@ -5,6 +5,13 @@ import { Provider } from 'react-redux'
 import reducer from './reducers/index'
 import middleware from './middleware/index'
 import { receiveDecks } from './actions/index'
+import * as Font from 'expo-font'
+import { robotoMedium, robotoRegular } from './utils/fonts'
+import NavigationService from './navigation/navigationService'
+import { fetchAllDecks } from './utils/api'
+import { setLocalNotification } from './utils/notificationHelper'
+
+import StackNavigation from './navigation/StackNavigation'
 
 export default function App() {
   return (

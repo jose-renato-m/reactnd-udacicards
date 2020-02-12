@@ -94,10 +94,28 @@ class AddCard extends Component {
                     </TouchableOpacity> 
 
                 </View>
-                
+
             </View>
         )
     }
+}
+
+function mapDispatchToProps(dispatch, { navigation }) {
+
+    return {
+        addCard: (question, answer) => {
+            const { deckId } = navigation.state.params
+            const questionDetails = {
+                deckId,
+                question,
+                answer,
+            }
+
+            dispatch(addCard(questionDetails))
+        },
+        goBack: () => navigation.goBack()
+    }
+    
 }
 
 export default connect()(AddCard)

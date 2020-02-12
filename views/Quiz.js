@@ -36,6 +36,21 @@ class Quiz extends Component {
             this.setState({currentQuestionIndex: this.state.currentQuestionIndex + 1})
         }
     }
+
+    handleStartQuizAgain = () => {
+        this.setState({
+            currentQuestionIndex: 0,
+            answeredCorrectly: 0,
+            quizComplete: false,
+        })
+    }
+
+    render() {
+
+        return (
+            
+        )
+    }
 }
 
 export default connect()(Quiz)

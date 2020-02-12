@@ -71,7 +71,25 @@ class AddCard extends Component {
 
                 <View style={globalStyles.viewContainer}>
 
-                    <Text style={globalStyles.title}>Add Card</Text>                    
+                    <Text style={globalStyles.title}>Add Card</Text>
+                    <Text style={styles.tagline}>Add a new card to the deck of flashcards</Text>
+
+
+                    <Text style={styles.label}>Your question</Text>   
+                    <TextInput value={this.state.question} onChangeText={this.onQuestionChange} style={globalStyles.textInput} />  
+
+                    {this.state.showQuestionRequiredError && (
+                        <Text style={globalStyles.inputErrorText}>Please enter your question</Text>
+                    )}
+
+                    <Text style={styles.label}>The answer</Text>
+                    <TextInput value={this.state.answer} onChangeText={this.onAnswerChange} style={globalStyles.textInput} />
+
+                    {this.state.showAnswerRequiredError && (
+                        <Text style={globalStyles.inputErrorText}>Please enter the answer</Text>
+                    )}
+                    
+                     
                 </View>
             </View>
         )

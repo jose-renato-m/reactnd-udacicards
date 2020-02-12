@@ -56,6 +56,20 @@ class AddCard extends Component {
 
         this.resetState()
     }
+
+    onQuestionChange = (value) => {
+        this.setState({ question: value })
+    }
+
+    onAnswerChange = (value) => {
+        this.setState({ answer: value })
+    }
+
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default connect()(AddCard)

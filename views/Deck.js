@@ -81,4 +81,4 @@ function mapStateToProps(decks, { navigation }) {
     }
 }
 
-export default connect()(Deck)
+export default connect(mapStateToProps)(Deck)

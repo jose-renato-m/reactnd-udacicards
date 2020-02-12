@@ -35,7 +35,7 @@ export async function setLocalNotification() {
         if (status === 'granted') {
             await Notifications.cancelAllScheduledNotificationsAsync()
 
-            const tommorrow = getTomorrowAt8pm()
+            const tomorrow = getTomorrowAt8pm()
 
             Notifications.scheduleLocalNotificationAsync(
                 createNotification(),
@@ -48,4 +48,13 @@ export async function setLocalNotification() {
             AsyncStorage.setItem(NOTIFICATION_STORAGE_KEY, JSON.stringify(true))
         }
     }
+}
+
+function getTomorrowAt8pm() {
+    let tomorrow = new Date()
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    tomorrow.setHours(20)
+    tomorrow.setMinutes(0)
+    tomorrow.setSeconds(0)
+    return tomorrow
 }

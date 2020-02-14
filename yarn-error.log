@@ -1,0 +1,75 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-safe-area-view react-nattive-safe-area-context
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\re_mo\AppData\Local\Android\Sdk\platform-tools;C:\Users\re_mo\AppData\Local\Android\Sdk\tools;C:\Program Files\Java\jdk1.8.0_171\platform-tools;C:\Program Files\Java\jdk1.8.0_171\tools;C:\Program Files\nodejs\;C:\Users\re_mo\AppData\Local\Microsoft\WindowsApps;C:\Users\re_mo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\re_mo\AppData\Local\Yarn\bin;C:\Users\re_mo\AppData\Roaming\npm
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  13.7.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react-nattive-safe-area-context: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66027:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140539:22)
+      at Request.emit (events.js:321:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141511:10)
+      at Request.emit (events.js:321:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141433:12)
+      at Object.onceWrapper (events.js:427:28)
+      at IncomingMessage.emit (events.js:333:22)
+      at endReadableNT (_stream_readable.js:1201:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "@expo/vector-icons": "^10.0.6",
+      "@react-native-community/masked-view": "^0.1.5",
+      "expo": "^36.0.2",
+      "expo-constants": "^8.0.0",
+      "expo-font": "^8.0.0",
+      "expo-permissions": "~8.0.0",
+      "native": "^0.3.3",
+      "prop-types": "^15.7.2",
+      "react": "^16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-gesture-handler": "^1.5.6",
+      "react-native-reanimated": "^1.4.0",
+      "react-native-safe-area-context": "^0.6.4",
+      "react-native-safe-area-view": "^1.0.0",
+      "react-native-screens": "^2.0.0-alpha.12",
+      "react-native-web": "~0.11.7",
+      "react-navigation": "^4.1.1",
+      "react-navigation-stack": "^2.1.1",
+      "react-navigation-tabs": "^2.7.0",
+      "react-redux": "^7.1.3",
+      "redux": "^4.0.5",
+      "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "~8.0.0",
+      "@babel/core": "^7.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

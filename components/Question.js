@@ -52,7 +52,7 @@ class Question extends Component {
                         <Text style={styles.heading}>How did you do?</Text>
                         <Text style={styles.smallText}>You got the answer...</Text>
 
-                        <View style={styles.buttons.Container}>
+                        <View style={styles.buttonsContainer}>
 
                             <View style={{ flex: 1 }}>
                                 <TouchableOpacity
